@@ -33,25 +33,25 @@
              &kp QUESTION  &kp HASH    &kp ASTERISK  &kp AMPERSAND   &kp EXCLAMATION     &kp LESS_THAN   &kp GREATER_THAN   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp SEMICOLON
              &kp AT_SIGN   &kp COLON   &kp PERIOD    &kp UNDERSCORE  &kp EQUAL           &kp LEFT_BRACE  &kp RIGHT_BRACE    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PLUS
 &kp PERCENT  &kp CARET     &kp DOLLAR  &kp COMMA     &kp SLASH       &kp BACKSLASH       &kp GRAVE       &kp DOUBLE_QUOTES  &kp SINGLE_QUOTE      &kp PIPE               &kp MINUS      &kp TILDE
-                                       &sk LEFT_GUI  &sk LEFT_SHIFT  &sk LEFT_CONTROL    &sk LEFT_ALT    &none              &none
+                                       &sk LEFT_GUI  &sk LEFT_SHIFT  &sk LEFT_CONTROL    &sk LEFT_ALT    &sk LEFT_SHIFT     &none
             >;
         };
 
         number {
             bindings = <
-            &kp F1  &kp F2   &kp F3   &kp F4   &bt BT_SEL 0    &none  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &none
-            &kp F5  &kp F6   &kp F7   &kp F8   &bt BT_SEL 1    &none  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &none
-&bt BT_CLR  &kp F9  &kp F10  &kp F11  &kp F12  &bt BT_SEL 2    &none  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &none  &none
-                             &none    &none    &none           &none  &kp NUMBER_0  &none
+       &kp F1  &kp F2   &kp F3   &kp F4   &bt BT_SEL 0    &none  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &none
+       &kp F5  &kp F6   &kp F7   &kp F8   &bt BT_SEL 1    &none  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &none
+&none  &kp F9  &kp F10  &kp F11  &kp F12  &bt BT_SEL 2    &none  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &none  &none
+                        &none    &none    &none           &none  &kp NUMBER_0  &none
             >;
         };
 
         move {
             bindings = <
-       &to 5  &none  &none  &none  &none    &none      &kp LA(LEFT_ARROW)  &kp UP_ARROW    &kp LA(RIGHT_ARROW)  &none
-       &none  &none  &none  &none  &none    &kp LC(A)  &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT_ARROW      &kp LC(E)
-&none  &none  &none  &none  &none  &none    &none      &kp PAGE_DOWN       &kp PAGE_UP     &none                &none      &none
-                     &none  &none  &none    &none      &none               &none
+       &to 5  &bt BT_CLR  &none  &none  &none    &none      &kp LA(LEFT_ARROW)  &kp UP_ARROW    &kp LA(RIGHT_ARROW)  &none
+       &none  &none       &none  &none  &none    &kp LC(A)  &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT_ARROW      &kp LC(E)
+&none  &none  &none       &none  &none  &none    &none      &kp PAGE_DOWN       &kp PAGE_UP     &none                &none      &none
+                          &none  &none  &none    &none      &none               &none
             >;
         };
 
