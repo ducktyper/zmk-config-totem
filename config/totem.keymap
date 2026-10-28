@@ -57,10 +57,10 @@
 
         action {
             bindings = <
-       &none  &none       &none    &none      &none    &none  &none  &none  &none  &none
-       &none  &kp ESCAPE  &kp TAB  &kp ENTER  &none    &none  &none  &none  &none  &none
-&none  &none  &none       &none    &none      &none    &none  &none  &none  &none  &none  &none
-                          &none    &none      &none    &none  &none  &none
+       &kp C_POWER  &none       &none      &none      &none    &none  &none  &none  &none  &none
+       &none        &kp ESCAPE  &kp TAB    &kp ENTER  &none    &none  &none  &none  &none  &none
+&none  &none        &none       &kp LG(C)  &kp LG(V)  &none    &none  &none  &none  &none  &none  &none
+                                &none      &sl 6      &none    &none  &none  &none
             >;
         };
 
@@ -70,6 +70,15 @@
        &none  &to 0  &none      &none  &none        &none           &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none
 &none  &none  &none  &mkp LCLK  &none  &none        &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP    &msc SCRL_RIGHT  &none  &none
                      &none      &none  &none        &none           &none           &none
+            >;
+        };
+
+        chrome {
+            bindings = <
+        &trans  &trans  &trans  &trans  &trans    &trans              &trans                   &trans                  &trans               &trans
+        &trans  &trans  &trans  &trans  &trans    &kp LG(LEFT_ARROW)  &kp LG(LA(RIGHT_ARROW))  &kp LG(LA(LEFT_ARROW))  &kp LG(RIGHT_ARROW)  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans              &kp LS(LC(PAGE_DOWN))    &kp LS(LC(PAGE_UP))     &trans               &trans  &trans
+                        &trans  &trans  &trans    &trans              &trans                   &trans
             >;
         };
     };
