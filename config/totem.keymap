@@ -21,19 +21,19 @@
 
         base {
             bindings = <
-               &kp Q  &kp W  &kp E  &kp R  &kp T    &kp Y          &kp U  &kp I      &kp O        &kp P
-               &kp A  &kp S  &kp D  &kp F  &kp G    &kp H          &kp J  &kp K      &kp L        &kp F13
-&kp BACKSPACE  &kp Z  &kp X  &kp C  &kp V  &kp B    &kp N          &kp M  &kp SPACE  &key_repeat  &none    &caps_word
-                             &sl 3  &sl 1  &sl 2    &kp LC(SPACE)  &sl 1  &sl 4
+               &kp Q  &kp W  &kp E  &kp R  &kp T    &kp Y          &kp U  &kp I           &kp O        &kp P
+               &kp A  &kp S  &kp D  &kp F  &kp G    &kp H          &kp J  &kp K           &kp L        &kp F13
+&kp BACKSPACE  &kp Z  &kp X  &kp C  &kp V  &kp B    &kp N          &kp M  &kp SPACE       &key_repeat  &none    &caps_word
+                             &sl 3  &sl 1  &sl 2    &kp LC(SPACE)  &sl 1  &sk LEFT_SHIFT
             >;
         };
 
         special_chars {
             bindings = <
-             &kp QUESTION  &kp HASH    &kp ASTERISK  &kp AMPERSAND   &kp EXCLAMATION     &kp LESS_THAN   &kp GREATER_THAN   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp SEMICOLON
-             &kp AT_SIGN   &kp COLON   &kp PERIOD    &kp UNDERSCORE  &kp EQUAL           &kp LEFT_BRACE  &kp RIGHT_BRACE    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PLUS
-&kp PERCENT  &kp CARET     &kp DOLLAR  &kp COMMA     &kp SLASH       &kp BACKSLASH       &kp GRAVE       &kp DOUBLE_QUOTES  &kp SINGLE_QUOTE      &kp PIPE               &kp MINUS      &kp TILDE
-                                       &sk LEFT_GUI  &sk LEFT_SHIFT  &sk LEFT_CONTROL    &sk LEFT_ALT    &sk LEFT_SHIFT     &none
+             &kp QUESTION  &kp HASH    &kp ASTERISK  &kp AMPERSAND   &kp EXCLAMATION    &kp LESS_THAN   &kp GREATER_THAN   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp SEMICOLON
+             &kp AT_SIGN   &kp COLON   &kp PERIOD    &kp UNDERSCORE  &kp EQUAL          &kp LEFT_BRACE  &kp RIGHT_BRACE    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PLUS
+&kp PERCENT  &kp CARET     &kp DOLLAR  &kp COMMA     &kp SLASH       &kp BACKSLASH      &kp GRAVE       &kp DOUBLE_QUOTES  &kp SINGLE_QUOTE      &kp PIPE               &kp MINUS      &kp TILDE
+                                       &sk LEFT_GUI  &sk LCTRL       &sk LEFT_ALT       &kp TAB         &kp ENTER          &kp ESCAPE
             >;
         };
 
@@ -48,19 +48,10 @@
 
         move {
             bindings = <
-       &to 5  &bt BT_CLR  &none  &none  &none    &none      &kp LA(LEFT_ARROW)  &kp UP_ARROW    &kp LA(RIGHT_ARROW)  &none
-       &none  &none       &none  &none  &none    &kp LC(A)  &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT_ARROW      &kp LC(E)
-&none  &none  &none       &none  &none  &none    &none      &kp PAGE_DOWN       &kp PAGE_UP     &none                &none      &none
-                          &none  &none  &none    &none      &none               &none
-            >;
-        };
-
-        action {
-            bindings = <
-       &kp C_POWER  &none       &none      &none      &none    &none  &none  &none  &none  &none
-       &none        &kp ESCAPE  &kp TAB    &kp ENTER  &none    &none  &none  &none  &none  &none
-&none  &none        &none       &kp LG(C)  &kp LG(V)  &none    &none  &none  &none  &none  &none  &none
-                                &none      &sl 6      &none    &none  &none  &none
+       &to 4  &bt BT_CLR  &kp C_POWER  &none  &none    &kp LG(C)  &kp LA(LEFT_ARROW)  &kp UP_ARROW    &kp LA(RIGHT_ARROW)  &kp LG(V)
+       &none  &none       &none        &none  &none    &kp LC(A)  &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT_ARROW      &kp LC(E)
+&none  &none  &none       &none        &none  &none    &none      &kp PAGE_DOWN       &kp PAGE_UP     &none                &none      &none
+                          &sl 5        &none  &none    &none      &none               &none
             >;
         };
 
