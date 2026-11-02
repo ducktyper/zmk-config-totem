@@ -52,7 +52,7 @@
              &kp QUESTION  &kp HASH    &kp ASTERISK  &kp AMPERSAND   &kp EXCLAMATION    &kp LESS_THAN   &kp GREATER_THAN   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp SEMICOLON
              &kp AT_SIGN   &kp COLON   &kp COMMA     &kp UNDERSCORE  &kp EQUAL          &kp LEFT_BRACE  &kp RIGHT_BRACE    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PLUS
 &kp PERCENT  &kp CARET     &kp DOLLAR  &kp PERIOD    &kp SLASH       &kp BACKSLASH      &kp GRAVE       &kp DOUBLE_QUOTES  &kp SINGLE_QUOTE      &kp PIPE               &kp MINUS      &kp TILDE
-                                       &sk LEFT_GUI  &sk LCTRL       &sk LEFT_ALT       &none           &none              &none
+                                       &sk LEFT_GUI  &sk LCTRL       &sk LEFT_ALT       &none           &none              &kp CAPS
             >;
         };
 
@@ -85,10 +85,10 @@
 
         chrome {
             bindings = <
-        &trans  &trans  &trans  &trans  &trans    &trans              &trans                   &trans                  &trans               &trans
-        &trans  &trans  &trans  &trans  &trans    &kp LG(LEFT_ARROW)  &kp LG(LA(RIGHT_ARROW))  &kp LG(LA(LEFT_ARROW))  &kp LG(RIGHT_ARROW)  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans              &kp LS(LC(PAGE_DOWN))    &kp LS(LC(PAGE_UP))     &trans               &trans  &trans
-                        &trans  &trans  &trans    &trans              &trans                   &trans
+       &none  &none  &none  &none  &none    &none               &none                    &none                   &none                &none
+       &none  &none  &none  &none  &none    &kp LG(LEFT_ARROW)  &kp LG(LA(RIGHT_ARROW))  &kp LG(LA(LEFT_ARROW))  &kp LG(RIGHT_ARROW)  &none
+&none  &none  &none  &none  &none  &none    &none               &kp LS(LC(PAGE_DOWN))    &kp LS(LC(PAGE_UP))     &none                &none  &none
+                     &none  &none  &none    &none               &none                    &none
             >;
         };
     };
