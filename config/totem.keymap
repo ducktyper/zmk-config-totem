@@ -21,17 +21,17 @@
 
         enter {
             bindings = <&kp ENTER>;
-            key-positions = <16 17>;
+            key-positions = <13 12>;
         };
 
         esc {
             bindings = <&kp ESCAPE>;
-            key-positions = <17 18>;
+            key-positions = <11 12>;
         };
 
         tab {
             bindings = <&kp TAB>;
-            key-positions = <16 18>;
+            key-positions = <11 13>;
         };
     };
 
@@ -42,7 +42,7 @@
             bindings = <
                &kp Q  &kp W  &kp E  &kp R  &kp T    &kp Y          &kp U  &kp I      &kp O        &kp P
                &kp A  &kp S  &kp D  &kp F  &kp G    &kp H          &kp J  &kp K      &kp L        &kp F13
-&kp BACKSPACE  &kp Z  &kp X  &kp C  &kp V  &kp B    &kp N          &kp M  &kp SPACE  &key_repeat  &none    &none
+&kp BACKSPACE  &kp Z  &kp X  &kp C  &kp V  &kp B    &kp N          &kp M  &kp SPACE  &key_repeat  &none    &caps_word
                              &sl 4  &sl 2  &sl 3    &kp LC(SPACE)  &sl 1  &none
             >;
         };
@@ -52,7 +52,7 @@
              &kp QUESTION  &kp HASH    &kp ASTERISK  &kp AMPERSAND   &kp EXCLAMATION    &kp LS(Y)  &kp LS(U)       &kp LS(I)   &kp LS(O)  &kp LS(P)
              &kp AT_SIGN   &kp COLON   &kp COMMA     &kp UNDERSCORE  &kp EQUAL          &kp LS(H)  &kp LS(J)       &kp LS(K)   &kp LS(L)  &none
 &kp PERCENT  &kp CARET     &kp DOLLAR  &kp PERIOD    &kp SLASH       &kp BACKSLASH      &kp LS(N)  &kp LS(M)       &caps_word  &none      &none      &none
-                                       &sk LEFT_GUI  &sk LCTRL       &sk LEFT_ALT       &none      &sk LEFT_SHIFT  &kp CAPS
+                                       &sk LEFT_GUI  &sk LCTRL       &sk LEFT_ALT       &none      &sk LEFT_SHIFT  &none
             >;
         };
 
